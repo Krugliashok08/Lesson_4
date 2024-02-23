@@ -22,8 +22,16 @@ Employee employee = new Employee ("Ivanov Ivan","Engineer", "Ivan@mail.ru", "412
 
 
         }
+        Park[] PA = new Park[2];
+
+        PA[0] = new Park("Карусель", 12 - 18, 300);
+        PA[1] = new Park("Ракета", 12 - 18, 500);
+
+
+        System.out.println(Park);
+    }
 
 
     }
 
-}
+
