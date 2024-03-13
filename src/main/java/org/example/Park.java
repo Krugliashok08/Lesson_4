@@ -1,56 +1,34 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Park {
-    private String name;
-    private int hours;
-    private int price;
-
-    public Park(String name, int hours, int price){
-    this.name =name;
-    this.hours =hours;
-    this. price =price;
-}
-
-    public static class Attraction{
-       private String name;
-       private int hours;
-       private int price;
+    private static List<Attraction> attractions;
 
 
-        public Attraction(String name, int hours, int price) {
-            this.name = name;
-            this.hours = hours;
-            this.price = price;
-        }
+    public Park() {
 
-        public String getName() {
-            return name;
-        }
+        attractions = new ArrayList<>();
 
-        public void setName(String name) {
-            this.name = name;
-        }
+    }
 
-        public int getHours() {
-            return hours;
-        }
 
-        public void setHours(int hours) {
-            this.hours = hours;
-        }
+    public static void addAttraction(String name, String workingHours, String cost) {
 
-        public int getPrice() {
-            return price;
-        }
+        Attraction attraction = new Attraction(name, workingHours, cost);
 
-        public void setPrice(int price) {
-            this.price = price;
-        }
+        attractions.add(attraction);
 
-        @Override
-        public String toString() {
-            return new Park(this.name,this.hours, this.price).toString();
+    }
+
+
+    public void printAttractions() {
+
+        for (Attraction attraction : attractions) {
+
+            System.out.println(attraction);
+
         }
     }
 }
-

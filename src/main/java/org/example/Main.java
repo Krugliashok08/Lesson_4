@@ -2,11 +2,8 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-Employee employee = new Employee ("Ivanov Ivan","Engineer", "Ivan@mail.ru", "4124555",50000,30);
 
-    System.out.println(employee);
-
-    Employee[] emArray = new Employee[5];
+        Employee[] emArray = new Employee[5];
         emArray[0] = new Employee("Ivanov Ivan", "Engineer", "Ivan@mail.ru", "4124555", 50000, 30);
         emArray[1] = new Employee("Petrov Peter", "Director", "Peter@mail.ru", "4124550", 55000, 35);
         emArray[2] = new Employee("Sidorov Slava", "Manager", "Slava@mail.ru", "4124551", 51000, 29);
@@ -20,18 +17,13 @@ Employee employee = new Employee ("Ivanov Ivan","Engineer", "Ivan@mail.ru", "412
             System.out.println("Salary: " + emArray[i].getSalary());
             System.out.println("Age: " + emArray[i].getAge());
 
+            Park park = new Park();
 
+            Park.addAttraction("Карусель", "12:00 - 18:00", "300");
+            Park.addAttraction("Ракета", "12:00 - 18:00", "500");
+            park.printAttractions();
         }
-        Park[] PA = new Park[2];
-
-        PA[0] = new Park("Карусель", 12 - 18, 300);
-        PA[1] = new Park("Ракета", 12 - 18, 500);
-
-
-        System.out.println(Park);
-    }
-
 
     }
 
-
+}

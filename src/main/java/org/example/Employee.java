@@ -76,6 +76,23 @@ public class Employee {
                 ",age=" + age +
                 '}';
     }
+    public void printInfo() {
+
+        System.out.println("ФИО: " + name);
+
+        System.out.println("Должность: " + position);
+
+        System.out.println("Email: " + email);
+
+        System.out.println("Телефон: " + phone);
+
+        System.out.println("Зарплата: " + salary);
+
+        System.out.println("Возраст: " + age);
+
+        System.out.println("------------------------------------------");
+
+    }
 
 }
 
